@@ -61,6 +61,12 @@ impl Client {
         self
     }
 
+    /// Override the Stripe API version for this client.
+    pub fn with_stripe_version(mut self, version: crate::ApiVersion) -> Self {
+        self.headers.stripe_version = version;
+        self
+    }
+
     /// Set the request strategy for the client.
     ///
     /// Note: the client is cheap to clone so if you require a new client
