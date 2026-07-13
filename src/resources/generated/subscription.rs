@@ -3077,6 +3077,25 @@ pub enum SubscriptionsResourcePaymentSettingsPaymentMethodTypes {
     Sofort,
     UsBankAccount,
     WechatPay,
+    Alma,
+    Billie,
+    KakaoPay,
+    KrCard,
+    MbWay,
+    Mobilepay,
+    Multibanco,
+    NaverPay,
+    NzBankAccount,
+    PayByBank,
+    Payco,
+    Payto,
+    SamsungPay,
+    Satispay,
+    Twint,
+    Upi,
+    /// Any payment method type this library version does not know yet.
+    #[serde(other)]
+    Unknown,
 }
 
 impl SubscriptionsResourcePaymentSettingsPaymentMethodTypes {
@@ -3118,6 +3137,23 @@ impl SubscriptionsResourcePaymentSettingsPaymentMethodTypes {
                 "us_bank_account"
             }
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::WechatPay => "wechat_pay",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Alma => "alma",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Billie => "billie",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::KakaoPay => "kakao_pay",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::KrCard => "kr_card",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::MbWay => "mb_way",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Mobilepay => "mobilepay",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Multibanco => "multibanco",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::NaverPay => "naver_pay",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::NzBankAccount => "nz_bank_account",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::PayByBank => "pay_by_bank",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Payco => "payco",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Payto => "payto",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::SamsungPay => "samsung_pay",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Satispay => "satispay",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Twint => "twint",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Upi => "upi",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Unknown => "unknown",
         }
     }
 }
