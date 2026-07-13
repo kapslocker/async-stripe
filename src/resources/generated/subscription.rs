@@ -3052,6 +3052,7 @@ pub enum SubscriptionsResourcePaymentSettingsPaymentMethodTypes {
     AchCreditTransfer,
     AchDebit,
     AcssDebit,
+    AmazonPay,
     AuBecsDebit,
     BacsDebit,
     Bancontact,
@@ -3059,6 +3060,7 @@ pub enum SubscriptionsResourcePaymentSettingsPaymentMethodTypes {
     Card,
     Cashapp,
     CustomerBalance,
+    Crypto,
     Eps,
     Fpx,
     Giropay,
@@ -3085,6 +3087,7 @@ impl SubscriptionsResourcePaymentSettingsPaymentMethodTypes {
             }
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::AchDebit => "ach_debit",
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::AcssDebit => "acss_debit",
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::AmazonPay => "amazon_pay",
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::AuBecsDebit => "au_becs_debit",
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::BacsDebit => "bacs_debit",
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Bancontact => "bancontact",
@@ -3094,6 +3097,7 @@ impl SubscriptionsResourcePaymentSettingsPaymentMethodTypes {
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::CustomerBalance => {
                 "customer_balance"
             }
+            SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Crypto => "crypto",
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Eps => "eps",
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Fpx => "fpx",
             SubscriptionsResourcePaymentSettingsPaymentMethodTypes::Giropay => "giropay",
