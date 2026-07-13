@@ -2671,6 +2671,25 @@ pub enum InvoicesPaymentSettingsPaymentMethodTypes {
     Sofort,
     UsBankAccount,
     WechatPay,
+    Alma,
+    Billie,
+    KakaoPay,
+    KrCard,
+    MbWay,
+    Mobilepay,
+    Multibanco,
+    NaverPay,
+    NzBankAccount,
+    PayByBank,
+    Payco,
+    Payto,
+    SamsungPay,
+    Satispay,
+    Twint,
+    Upi,
+    /// Any payment method type this library version does not know yet.
+    #[serde(other)]
+    Unknown,
 }
 
 impl InvoicesPaymentSettingsPaymentMethodTypes {
@@ -2704,6 +2723,23 @@ impl InvoicesPaymentSettingsPaymentMethodTypes {
             InvoicesPaymentSettingsPaymentMethodTypes::Sofort => "sofort",
             InvoicesPaymentSettingsPaymentMethodTypes::UsBankAccount => "us_bank_account",
             InvoicesPaymentSettingsPaymentMethodTypes::WechatPay => "wechat_pay",
+            InvoicesPaymentSettingsPaymentMethodTypes::Alma => "alma",
+            InvoicesPaymentSettingsPaymentMethodTypes::Billie => "billie",
+            InvoicesPaymentSettingsPaymentMethodTypes::KakaoPay => "kakao_pay",
+            InvoicesPaymentSettingsPaymentMethodTypes::KrCard => "kr_card",
+            InvoicesPaymentSettingsPaymentMethodTypes::MbWay => "mb_way",
+            InvoicesPaymentSettingsPaymentMethodTypes::Mobilepay => "mobilepay",
+            InvoicesPaymentSettingsPaymentMethodTypes::Multibanco => "multibanco",
+            InvoicesPaymentSettingsPaymentMethodTypes::NaverPay => "naver_pay",
+            InvoicesPaymentSettingsPaymentMethodTypes::NzBankAccount => "nz_bank_account",
+            InvoicesPaymentSettingsPaymentMethodTypes::PayByBank => "pay_by_bank",
+            InvoicesPaymentSettingsPaymentMethodTypes::Payco => "payco",
+            InvoicesPaymentSettingsPaymentMethodTypes::Payto => "payto",
+            InvoicesPaymentSettingsPaymentMethodTypes::SamsungPay => "samsung_pay",
+            InvoicesPaymentSettingsPaymentMethodTypes::Satispay => "satispay",
+            InvoicesPaymentSettingsPaymentMethodTypes::Twint => "twint",
+            InvoicesPaymentSettingsPaymentMethodTypes::Upi => "upi",
+            InvoicesPaymentSettingsPaymentMethodTypes::Unknown => "unknown",
         }
     }
 }

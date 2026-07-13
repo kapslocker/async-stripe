@@ -2392,6 +2392,25 @@ pub enum PaymentMethodType {
     UsBankAccount,
     WechatPay,
     Zip,
+    Alma,
+    Billie,
+    KakaoPay,
+    KrCard,
+    MbWay,
+    Mobilepay,
+    Multibanco,
+    NaverPay,
+    NzBankAccount,
+    PayByBank,
+    Payco,
+    Payto,
+    SamsungPay,
+    Satispay,
+    Twint,
+    Upi,
+    /// Any payment method type this library version does not know yet.
+    #[serde(other)]
+    Unknown,
 }
 
 impl PaymentMethodType {
@@ -2434,6 +2453,23 @@ impl PaymentMethodType {
             PaymentMethodType::UsBankAccount => "us_bank_account",
             PaymentMethodType::WechatPay => "wechat_pay",
             PaymentMethodType::Zip => "zip",
+            PaymentMethodType::Alma => "alma",
+            PaymentMethodType::Billie => "billie",
+            PaymentMethodType::KakaoPay => "kakao_pay",
+            PaymentMethodType::KrCard => "kr_card",
+            PaymentMethodType::MbWay => "mb_way",
+            PaymentMethodType::Mobilepay => "mobilepay",
+            PaymentMethodType::Multibanco => "multibanco",
+            PaymentMethodType::NaverPay => "naver_pay",
+            PaymentMethodType::NzBankAccount => "nz_bank_account",
+            PaymentMethodType::PayByBank => "pay_by_bank",
+            PaymentMethodType::Payco => "payco",
+            PaymentMethodType::Payto => "payto",
+            PaymentMethodType::SamsungPay => "samsung_pay",
+            PaymentMethodType::Satispay => "satispay",
+            PaymentMethodType::Twint => "twint",
+            PaymentMethodType::Upi => "upi",
+            PaymentMethodType::Unknown => "unknown",
         }
     }
 }
